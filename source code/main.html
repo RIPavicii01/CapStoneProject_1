@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영화 추천 서비스</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>7조 영화 추천 서비스</h1>
+        <p>조원</p>
+        <ul>
+            <li>2021143021 - 김병수</li>
+            <li>2021143013 - 김준성</li>
+            <li>2022143032 - 장형준</li>
+        </ul>
+    </header>
+
+    <div class="main-content">
+        <h2>당신만의 완벽한 영화를 찾아보세요!</h2>
+        <p>취향에 맞는 영화를 선택하고, 추천받은 영화 정보를 확인하세요.</p>
+        <div class="start-buttons">
+            <button class="start-btn" onclick="goToMovieSearch()">영화 제목으로 추천받기</button>
+            <button class="start-btn" onclick="goToGenreSelection()">장르로 추천받기</button>
+        </div>
+    </div>
+
+    <div class="search-section">
+        <h3>영화 검색</h3>
+        <input type="text" id="searchInput" placeholder="영화 제목을 입력하세요">
+        <button onclick="searchMovies()">검색</button>
+        <div id="searchResults" class="movie-list"></div>
+    </div>
+
+    <div class="random-section">
+        <h3>랜덤 추천</h3>
+        <button onclick="getRandomRecommendation()">랜덤 영화 추천받기</button>
+        <div id="randomResults" class="movie-list"></div>
+    </div>
+
+    <footer>
+        &copy; 2024 영화 추천 서비스. All Rights Reserved.
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

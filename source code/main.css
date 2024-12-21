@@ -1,0 +1,128 @@
+/* 기본 스타일 유지 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* 헤더 스타일 */
+header {
+    background-color: #343a40;
+    color: white;
+    width: 100%;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+header p {
+    margin: 0;
+    font-size: 16px;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+header ul li {
+    margin: 2px 0;
+}
+
+/* 네비게이션 스타일 */
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* 메인 콘텐츠 스타일 */
+.main-content {
+    margin-top: 40px;
+}
+
+.main-content p {
+    font-size: 18px;
+    color: #6c757d;
+}
+
+.start-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.start-btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.start-btn:hover {
+    background-color: #218838;
+}
+
+/* 검색 및 랜덤 추천 섹션 */
+.search-section,
+.random-section {
+    margin: 20px 0;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.movie-list {
+    margin: 20px 0;
+    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.movie {
+    text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+}
+
+.movie img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* 푸터 스타일 */
+footer {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #6c757d;
+}
